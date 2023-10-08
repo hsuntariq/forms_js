@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="">Name</label>
+        <input type="text" >
+        <label for="">Email</label>
+        <input type="text" >
+        <label for="">age</label>
+        <input type="number" name="" id="">
+        <button>
+            Submit
+        </button>
+    </form>
+    <script>
+        let inputs = document.querySelectorAll('input');
+        
+
+        let btn = document.querySelector('button');
+        btn.addEventListener('click',(e)=>{
+            e.preventDefault();
+            inputs.forEach((inp)=>{
+            console.log(inp.value);
+            inp.value = ''
+        })
+        })
+        // const numbers = [2,2,7,4,2,5,7,98]
+        // // console.log(numbers)
+        // numbers.forEach((num)=>{
+        //     console.log(num)
+        // })
+    </script>
+</body>
+</html>
